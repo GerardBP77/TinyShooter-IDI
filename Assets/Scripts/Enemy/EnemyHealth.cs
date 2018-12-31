@@ -20,6 +20,11 @@ namespace Assets.Scripts.Enemy
         private bool _isDeath;
         private bool _isSinking;
 
+        //Enemy Count
+
+        public int deathEnemies = 0;
+
+
         private void Awake()
         {
             _anim = GetComponent<Animator>();
@@ -48,7 +53,10 @@ namespace Assets.Scripts.Enemy
                 _hitParticles.Play();
             }
             if (CurrentHealth <= 0)
+            { 
                 Death(isgrenade);
+                deathEnemies++;
+            }
         }
 
         private void Death(bool isgrenade)
