@@ -1,0 +1,45 @@
+Initialize engine version: 5.4.0f3 (a6d8d714de6f)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 1050 (ID=0x1c8d)
+    Vendor:   NVIDIA
+    VRAM:     1979 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\PCCom\Desktop\Isometric-shooter-Unity3d--master\TinyShooter_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\PCCom\Desktop\Isometric-shooter-Unity3d--master\TinyShooter_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\PCCom\Desktop\Isometric-shooter-Unity3d--master\TinyShooter_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\PCCom\Desktop\Isometric-shooter-Unity3d--master\TinyShooter_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\PCCom\Desktop\Isometric-shooter-Unity3d--master\TinyShooter_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\PCCom\Desktop\Isometric-shooter-Unity3d--master\TinyShooter_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\PCCom\Desktop\Isometric-shooter-Unity3d--master\TinyShooter_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\PCCom\Desktop\Isometric-shooter-Unity3d--master\TinyShooter_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.043 seconds
+Platform assembly: C:\Users\PCCom\Desktop\Isometric-shooter-Unity3d--master\TinyShooter_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\PCCom\Desktop\Isometric-shooter-Unity3d--master\TinyShooter_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.576841 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 5ff4 -> priority: 1 
+  Thread -> id: f7c -> priority: 1 
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 19.484055 ms
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 933.
+Total: 0.814677 ms (FindLiveObjects: 0.082780 ms CreateObjectMapping: 0.121071 ms MarkObjects: 0.574358 ms  DeleteObjects: 0.035008 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 11.959414 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 933.
+Total: 0.866095 ms (FindLiveObjects: 0.082415 ms CreateObjectMapping: 0.062723 ms MarkObjects: 0.687041 ms  DeleteObjects: 0.032455 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 8.016216 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 933.
+Total: 0.774563 ms (FindLiveObjects: 0.092991 ms CreateObjectMapping: 0.053242 ms MarkObjects: 0.594779 ms  DeleteObjects: 0.032091 ms)
+

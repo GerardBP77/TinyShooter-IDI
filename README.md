@@ -1,1 +1,1 @@
-# TinyShooter-IDI
+# Protoype for IDI
