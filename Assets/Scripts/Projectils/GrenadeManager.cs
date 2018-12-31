@@ -12,8 +12,11 @@ namespace Assets.Scripts.Projectils
         public int Power=100;
         private float _time;
         private bool _isDetonating;//In order to prevent multiple Detonate Calls
+        //Timer first grenade
+        public float firstGrenadeTime;
+        public int firstGrenade = 0;
         #region Events
-       [HideInInspector]
+        [HideInInspector]
         public delegate void OnExplosionManager(Vector3 position);
        [HideInInspector]
        public event OnExplosionManager OnExplosion;
@@ -33,6 +36,13 @@ namespace Assets.Scripts.Projectils
             _time += Time.deltaTime;
             if (_time >= ExplosionTime && !_isDetonating)
                 Detonate();
+
+            firstGrenadeTime += Time.deltaTime;
+            if(_isDetonating == true && firstGrenadeTime == 0)
+            {
+                //Get Time and put in XML
+                firstGrenadeTime = 1;
+            }
         }
 
 

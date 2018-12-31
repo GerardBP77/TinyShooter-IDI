@@ -13,8 +13,9 @@ namespace Assets.Scripts.Projectils
         private VirtualJoystick _grenadeJoystick;
         private Aim _aimManager;
         private ParticleSystem _explosion;
-      
         
+
+
         void Awake()
         {
             _grenadeJoystick = GetComponent<VirtualJoystick>();
@@ -25,7 +26,8 @@ namespace Assets.Scripts.Projectils
        
         void Start () {
             _grenadeJoystick.Onclickup += _grenadeJoystick_Onclickup; ;
-	
+            
+
         }
 
         void _grenadeJoystick_Onclickup(bool isactive)
