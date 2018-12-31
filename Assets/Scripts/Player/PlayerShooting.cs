@@ -24,6 +24,14 @@ namespace Assets.Scripts.Player
         private const float EffectDisplayTime=0.2f;
         public VirtualJoystick JoysticShoot;
 
+        //Control vars
+
+        public int shootCount = 0;
+        public int shootHitCount = 0;
+        public float shootAverage = 0;
+        public float gameTimer = 0;    //Gameplay Timer
+
+
         private void Awake()
         {
             _shootableMask = LayerMask.GetMask("Shootable");
@@ -37,6 +45,7 @@ namespace Assets.Scripts.Player
         private void Update()
         {
             _timer += Time.deltaTime;
+            gameTimer += Time.deltaTime;
             if ((/*Input.GetButton("Fire1") || */JoysticShoot.IsShooting()) && _timer >= TimeBetweenBullets)
                 Shoot();
             if (_timer >= TimeBetweenBullets*EffectDisplayTime)
@@ -49,6 +58,12 @@ namespace Assets.Scripts.Player
             _gunLight.enabled = false;
         }
 
+        public float HitRate()
+        {
+            shootAverage = shootHitCount / shootCount * 100;
+            return shootAverage;
+        }
+
         private void Shoot()
         {
             _timer = 0;
@@ -56,6 +71,10 @@ namespace Assets.Scripts.Player
             _gunLight.enabled = true;
             _gunParticles.Stop();
             _gunParticles.Play();
+
+
+            //SHOOT COUNTER
+            shootCount++;
 
             _gunLine.enabled = true;
             _gunLine.SetPosition(0,transform.position);
@@ -69,11 +88,14 @@ namespace Assets.Scripts.Player
                 if (enemyHealth != null)
                     enemyHealth.TakeDamage(DamagePerShoot, _shootHit.point);
                 _gunLine.SetPosition(1, _shootHit.point);
-               
+
+                //HIT COUNTER
+                shootHitCount++;
             }
             else
             {
                 _gunLine.SetPosition(1,_shootRay.origin +_shootRay.direction*Range);
+                
             }
         }
     }
